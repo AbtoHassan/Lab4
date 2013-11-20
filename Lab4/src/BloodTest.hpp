@@ -10,49 +10,48 @@
 
 class BloodTest{    //Base Class
 protected:
-    int t;
-    char gender;
-    char celltype;
-    double CellAmount;
-    double volume;
-    double Result;
+	char choice;
 public:
     BloodTest();
     void Startup();
-    void cellspervolume();
-
+    void DisplayAllBloodInfo();
 };
 
 
-class BloodGlucose : class BloodTest{
-
+class BloodCount : public BloodTest{
+	char gender;
+	double Rcellspermicroliter;
+	double Wcellspermicroliter;
+	double Pcellspermicroliter;
+	double Hgramsperdeciliter;
 public:
-    BloodGlucose();
-    void initialize();
-    void Diagnosis();
-
-
-
+    BloodCount();
+    void InitializeBloodInfo();
+    void CheckInfo();
 };
 
 
 
-class Electro : class BloodTest{    //Electrolytes
-
+class Electrolytes : public BloodTest{    //Electrolytes
+	double Egramsperdeciliter;
 public:
-    Electro();
+	Electrolytes();
     void LowFLuid();
     void LowMinerals();
     void Stabalizing();
-
 };
 
 
-class Lipopro : class BloodTest{ //Lipoprotein
-
+class Lipoprotein : public BloodTest{ //Lipoprotein
+	double TotalLgramsperdeciliter;
+	double GoodLgramsperdeciliter;
+	double BadLgramsperdeciliter;
 public:
-    Lipopro();
-    void CholestrolLevels();
+    Lipoprotein();
+    void TGBCholestrolLevels();
+    void CheckTotalLevel();
+    void CheckGoodCholestrolLevel();
+    void CheckBadCholestrolLevel();
 };
 
 

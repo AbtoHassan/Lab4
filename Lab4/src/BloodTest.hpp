@@ -16,7 +16,7 @@ using namespace std;
 
 class BloodTest{    //Base Class
 protected:
-	string name;
+	string name;	//Common variables shared by all classes
 	char gender;
 	string condition;
 	string Bloodtype;
@@ -24,6 +24,9 @@ protected:
 public:
     BloodTest(); //User is asked to add the patients name
     void Startup(); //The rest of the patients info is inputed
+    void getBloodCount();//gets the info of the blood count derived class
+    void getBloodGlucose();//gets the info of the blood glucose derived class
+    void getLipoprotein();//gets the info of the Lipoprotein derived class
     void DisplayAllBloodInfo();	//Displays all of the Blood information of the patient
 };
 

@@ -60,7 +60,7 @@ public:
     void TGBCholestrolLevels();	//User inputs the good and bad Cholesterol levels (in mg/dL)
     void CheckTotalLevel();	//Checks the Total Cholestrol level and returns the Total Cholesterol Category
     void CheckGoodCholestrolLevel();//Checks the LDL Cholesterol Level and returns the LDL Cholesterol Category
-    void CheckBadCholestrolLevel();//Checks the HDL Cholesterol Level and returns the HDL Cholesterol Category
+    void CheckBadCholestrolLevel();//Checks the HDL Cholesterol Level then returns the HDL Cholesterol Category
 };
 
 

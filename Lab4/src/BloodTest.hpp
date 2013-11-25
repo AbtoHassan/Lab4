@@ -46,7 +46,8 @@ public:
 	BloodGlucose(); //User inputs the Plasma Glucose Results (mg/dL)
 	void Diagnosis();	//Based on the input their condition is returned
 	void AbnormalResults(); //If values don't fit in range it is shown with a comment
-};							//what this abnormal value means to the patients health (ie. critical)
+};							//what this abnormal value means to the patients health
+							//(ie. critical)
 
 
 

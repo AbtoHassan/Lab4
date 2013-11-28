@@ -30,15 +30,15 @@ switch(choice)
 	{
 		case 'C':
 		case 'c':
-			InitializeBloodInfo();
+			//InitializeBloodInfo();
 			break;
 		case 'G':
 		case 'g':
-			BloodSugarValues();
+			//BloodSugarValues();
 			break;
 		case 'L':
 		case 'l':
-			TGBCholestrolLevels();
+			//TGBCholestrolLevels();
 			break;
 	}
 }

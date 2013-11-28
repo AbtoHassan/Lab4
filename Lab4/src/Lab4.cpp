@@ -15,7 +15,7 @@ using namespace std;
 
 int main() {
 
-//Uncommented the Test Functions
+//Uncommented the Test Functions and Commented out tthe unused functions
 
 	BloodCount testbc;
 	BloodGlucose testbg;

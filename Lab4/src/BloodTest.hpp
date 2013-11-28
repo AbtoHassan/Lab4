@@ -28,7 +28,7 @@ public:
 };
 
 
-class BloodCount : public BloodTest{	//Derived Class
+class BloodCount : public BloodTest{	//Derived Class 1
 	double Rcellspermicroliter; //Red blood cells spermicroliter
 	double Wcellspermicroliter; //White blood cells spermicroliter
 	double Pcellspermicroliter; //Platelets cells spermicroliter
@@ -40,7 +40,7 @@ public:
 };
 
 
-class BloodGlucose : public BloodTest{    //Derived Class
+class BloodGlucose : public BloodTest{    //Derived Class 2
 	double Gmilligramsperdeciliter;
 	string Status;
 public:
@@ -53,7 +53,7 @@ public:
 };
 
 
-class Lipoprotein : public BloodTest{	//Derived Class
+class Lipoprotein : public BloodTest{	//Derived Class 3
 	double TotalLgramsperdeciliter;
 	double GoodLgramsperdeciliter;
 	double BadLgramsperdeciliter;

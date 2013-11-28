@@ -46,7 +46,7 @@ public:
 
 class test : public physical{
 protected:
-	int urinetestcolor;
+	int testcolor;
 public:
 	test();
 	void urinetestcolor();//allows the user to enter the color of the urine test result

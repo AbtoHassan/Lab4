@@ -15,23 +15,17 @@ using namespace std;
 
 int main() {
 
-//Uncommented the Test Functions and Commented out tthe unused functions
+//Uncommented the Test Functions and Commented out the unused functions
 
-	BloodCount testbc;
+	//BloodCount testbc;
 	BloodGlucose testbg;
-	Lipoprotein testl;
+	//Lipoprotein testl;  CREATING AN OBJECT FOR THE Lipoprotein CLASS
 
 
-	testbc.InitializeBloodInfo();
-	//testbc.CheckRanges();
+	//testbc.DisplayBloodCount();     //TEST 1 (RUN bloodtesting.cpp)
+	testbg.DisplayBloodGlucose();	//TEST 2 (RUN bloodtesting1.cpp)
 
-
-	testbg.BloodSugarValues();
-	testbg.Diagnosis();
-	//testbg.AbnormalResults();
-
-
-	testl.TGBCholestrolLevels();
+	//testl.Lipoprotein();
 	//testl.CheckTotalLevel();
 	//testl.CheckGoodCholestrolLevel();
 	//testl.CheckBadCholestrolLevel();

@@ -21,10 +21,9 @@ protected:
 	string condition;
 	string bloodtype;
 	int age;
-	char choice;
 public:
-    BloodTest(); //User is asked to add the patients name
-    void Startup(); //The rest of the patients info is inputed
+    BloodTest(); //User is asked to add information about the patients
+    void annotation(); //The user can Input comments about a patients test
 };
 
 
@@ -34,7 +33,7 @@ class BloodCount : public BloodTest{	//Derived Class 1
 	double Pcellspermicroliter; //Platelets cells spermicroliter
 	double Hgramsperdeciliter;  //Hemoglobin spermicroliter
 public:
-	void InitializeBloodInfo();//Displays the Gender of the patient/ displays all of the values of the above variables
+	BloodCount();//User inputs the variables above
     void CheckRanges();	//Checks if the values fit in the normal ranges or not
     void DisplayBloodCount();	//Displays all of the Blood Count information of the patient
 };
@@ -44,7 +43,7 @@ class BloodGlucose : public BloodTest{    //Derived Class 2
 	double Gmilligramsperdeciliter;
 	string Status;
 public:
-	void BloodSugarValues(); //User inputs the Plasma Glucose Results (mg/dL)
+	BloodGlucose(); //User inputs the Plasma Glucose Results (mg/dL)
 	void Diagnosis();	//Based on the input their Status is returned as a string (ie.Diabetes)
 	void AbnormalResults(); //If values don't fit in range it is shown with a comment
 						//what this abnormal value means to the patients health
@@ -58,7 +57,7 @@ class Lipoprotein : public BloodTest{	//Derived Class 3
 	double GoodLgramsperdeciliter;
 	double BadLgramsperdeciliter;
 public:
-    void TGBCholestrolLevels();	//User inputs the total/good/bad Cholesterol levels (in mg/dL)
+    Lipoprotein();	//User inputs the total/good/bad Cholesterol levels (in mg/dL)
     void CheckTotalLevel();	//Checks the Total Cholestrol level and returns the Total Cholesterol Category
     void CheckGoodCholestrolLevel();//Checks the LDL Cholesterol Level and returns the LDL Cholesterol Category
     void CheckBadCholestrolLevel();//Checks the HDL Cholesterol Level then returns the HDL Cholesterol Category

@@ -23,7 +23,7 @@ BloodCount::BloodCount()
 	cin >> Pcellspermicroliter;
 	cout << "Please Input the number of Hemoglobin cells in grams per deciliter: " <<endl;
 	cin >> Hgramsperdeciliter;	//TESTING BLOOD COUNT DERIVED CLASS
-	DisplayBloodCount();
+	DisplayBloodCount(); 	//Display info collected
 }
 
 void BloodCount::DisplayBloodCount()

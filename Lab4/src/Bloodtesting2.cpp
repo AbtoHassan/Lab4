@@ -11,8 +11,8 @@
 
 using namespace std;
 
-//TEST 2 (Checks if the two func in the blood Glucose class can work together to take a value
-//		  and display them
+//TEST 2 (Checks if the two func in the blood Glucose class work together to take a value
+//		  and display it
 BloodGlucose::BloodGlucose()
 {
 	cout << "Please input the Plasma Glucose Results (mg/dL): " <<endl;

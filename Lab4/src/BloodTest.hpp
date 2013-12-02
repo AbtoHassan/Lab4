@@ -16,9 +16,9 @@ using namespace std;
 
 class BloodTest{    //Base Class
 protected:
-	string name; //Common variables shared by all classes
+	string name; //Common variables shared by all clasess
 	char gender;	//General information needed to be displayed
-	string condition;
+	string condition; //Displayed some for testing
 	string bloodtype;
 	int age;
 public:

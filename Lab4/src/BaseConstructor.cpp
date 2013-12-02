@@ -12,7 +12,7 @@
 
 using namespace std;
 
-BloodTest::BloodTest()
+BloodTest::BloodTest() //Constructor function
 {
 	cout << "Please Input the Patients full name: " <<endl;
 	cin >> name;
